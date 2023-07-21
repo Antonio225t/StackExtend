@@ -1,22 +1,25 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./Themes/Styles/StackEdit.css" />
-    <link rel="stylesheet" href="../KaTeX/katex.min.css" />
+    <title>StackExtend</title>
+    
+    <link rel="stylesheet" href="./StackExtend/StackExtend.css" />
+    <style>
+      button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+    </style>
+    
+    <script type="text/javascript" src="./js-xss/js-xss.js"></script>
+    <script type="text/javascript" src="./KaTeX/katex.min.js"></script>
+    <script type="text/javascript" src="./Mermaid/mermaid.min.js"></script>
+    <script type="text/javascript" src="./abcjs/abcjs-basic-min.js"></script>
+    
+    <script type="text/javascript" src="./StackExtend/StackExtend.js"></script>
   </head>
   <body>
-    <div class="StackEditTheme" id="app">
-      <nav class="navigationBar">
-        <div class="navItemStackEditButton">
-          <a href="https://stackedit.io/app" target="_blank" class="navButton" title="Open StackEdit" aria-label="Open StackEdit" id="StackEdit">
-            <div class="provIcon provIconStackEdit"></div>
-          </a>
-        </div>
-        <div class="navItemPageName" id="pageName"></div>
-        <div class="navItemDocTitle" id="title"></div>
-        <div class="navItemThemeChange" id="themeBtn"></div>
-      </nav>
-      <div class="MarkDownDocument" id="content"></div>
-    </div>
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
