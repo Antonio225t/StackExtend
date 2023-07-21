@@ -14,7 +14,8 @@ In this graph above, you can see the following steps:
 2. **StackExtend** makes a request to **StackEdit's servers** that returns the **data** containing the **HTML string**;
 3. This **HTML string** passes trougth **StackExtend** again for **extending the HTML** by adding more custom things;
 4. The returned value is the same **data** returned by StackEdit's website, but the \`html\` value is replaced with a \`<markdown>{HTML}</markdown>\` Element.
-
+## How do I use it
+To use **StackExtend.js** you'll need to install it. You can do it by goint to [this repository](https://github.com/Antonio225t/StackExtend) and select a version in the branch
 ## Objects
 ### MDOC object
 A **MDOC** is a document that contains pages in MarkDown wich then will be converted in HTML.
@@ -87,7 +88,7 @@ if (!mdoc) {
     script.type = "text/javascript";
     script.src = mdoc;
     
-    window.head.appendChild(script);
+    document.head.appendChild(script);
   } else {
     window.mdoc = JSON.parse(atob(decodeURIComponent(mdoc)));
   }
@@ -101,7 +102,7 @@ if (!opts) {
     script.type = "text/javascript";
     script.src = opts;
     
-    window.head.appendChild(script);
+    document.head.appendChild(script);
   } else {
     window.options = JSON.parse(atob(decodeURIComponent(opts)));
   }
